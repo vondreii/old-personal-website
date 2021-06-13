@@ -1,0 +1,17 @@
+{{ range .Site.Menus.main.ByWeight }}
+    <li class="site-nav-item" id="blog-link" style="text-align: center">
+        <a title="Blog" href="/">Blog</a>
+    </li>
+    <li class="site-nav-item" id="projects-link" >
+        <a title="Projects" href="/projects">Projects</a>
+    </li>
+    <li class="site-nav-item" id="photography-link" >
+        <a title="Photography" href="/photography">Photography</a>
+    </li>
+    <li class="site-nav-item" id="about-link" >
+        <a title="About" href="/about">About</a>
+    </li>
+    <li class="site-nav-item" id="contact-link" >
+        <a title="Contact" href="/contact">Contact</a>
+    </li>
+{{ end }}

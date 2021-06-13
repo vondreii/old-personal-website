@@ -1,0 +1,51 @@
++++
+title = "Contact"
+date = 2015-04-03T02:13:50Z
+author = "My Name"
+description = ""
++++
+
+<style>
+    #contact-link a {color: #303030}
+
+    @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+    form { max-width:420px; margin:50px auto; }
+
+    .feedback-input {
+        color:black; font-family: Helvetica, Arial, sans-serif; font-weight:500; font-size: 18px;
+        border-radius: 5px; line-height: 22px; border:2px solid #707070;
+        background-color: transparent;
+        transition: all 0.3s;
+        padding: 13px; margin-bottom: 15px; width:100%;
+        box-sizing: border-box; outline:0;
+    }
+
+    .feedback-input:focus { border:2px solid #303030; background: #f3f3f3; }
+
+    textarea { height: 150px; line-height: 150%; resize:vertical; }
+
+    [type="submit"] {
+        font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+        width: 100%; background:#707070;
+        border-radius: 5px; border:0;
+        cursor: pointer;
+        color:white; font-size:24px; font-weight:700;
+        padding-top:10px; padding-bottom:10px; margin-top:-4px;
+        transition: all 0.3s;
+    }
+
+    [type="submit"]:hover { background:#303030; }
+
+    .centered {text-align: center}
+
+    #wrapper { background-image:url('/Backgrounds/mountain.png'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed} 
+</style>
+
+<p class="centered"> Just write your name, email and message and I will get back to you as soon as possible. </p>
+<form name="contact" method="POST" data-netlify="true">
+    <input name="name" type="text" class="feedback-input" placeholder="Name" />   
+    <input name="email" type="text" class="feedback-input" placeholder="Email" />
+    <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+    <input type="submit" value="SUBMIT"/>
+</form>

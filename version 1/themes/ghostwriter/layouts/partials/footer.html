@@ -1,0 +1,55 @@
+            </div>
+        </div>
+
+        <footer class="footer">
+            
+            <div class="container">
+                <div class="site-title-wrapper">
+                    <a class="button-square button-jump-top js-jump-top" href="#" style="padding: 2px 20px">
+                        <i class="fa fa-angle-up"></i>
+                    </a>
+                    {{ with .Site.Params.github }}
+                        <a class="button-square button-social hint--top" data-hint="Github" title="Github" href="{{ . }}" rel="me">
+                            <i class="fa fa-github-alt"></i>
+                        </a>
+                    {{ end }}
+                    {{ with .Site.Params.linkedin }}
+                        <a class="button-square button-social hint--top" data-hint="LinkedIn" title="LinkedIn" href="{{ . }}" rel="me">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    {{ end }}
+                    {{ with .Site.Params.email }}
+                        <a class="button-square button-social hint--top" data-hint="Email" title="Email" href="mailto:{{ . }}">
+                            <i class="fa fa-envelope"></i>
+                        </a>
+                    {{ end }}
+                    
+                </div>
+
+                <p class="footer-copyright">
+                    <span>&copy; 2020 SVD / Last modified 13/04/2020 </span>
+                </p>
+                <p class="footer-copyright">
+                    <span>Powered by <a href="https://gohugo.io/">Hugo</a> &copy; {{ .Site.LastChange.Format "2006" }} /</span>
+                    <span> <a href="https://github.com/jbub/ghostwriter">Ghostwriter </a> ported to Hugo By <a href="https://github.com/jbub">jbub</a></span>
+                </p>
+            </div>
+        </footer>
+
+        <script src="{{ .Site.BaseURL }}js/jquery-1.11.3.min.js"></script>
+        <script src="{{ .Site.BaseURL }}js/jquery.fitvids.js"></script>
+        
+        {{ if .Site.Params.highlightJsUrl }}
+            <script src="{{ .Site.Params.highlightJsUrl }}"></script>
+        {{ else if .Site.Params.highlightJsLocalUrl }}
+            <script src="{{ .Site.BaseURL }}{{ .Site.Params.highlightJsLocalUrl }}"></script>
+        {{ else }}
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        {{ end }}
+        
+        <script src="{{ .Site.BaseURL }}js/scripts.js"></script>
+        <style>
+            .footer .site-title a:hover, .footer .button-square:hover { background: #303030; }
+        </style>
+    </body>
+</html>

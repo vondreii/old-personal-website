@@ -1,0 +1,89 @@
++++
+title = "Sydney"
+date = 2015-04-03T02:13:50Z
+author = "My Name"
+description = "NSW, Australia"
++++
+
+<!-- Photo Grid -->
+<div class="row"> 
+    <div class="column">
+        <div class="overlay">
+            <img src="/Photography/sydney/sydney-bridge.jpg" style="width:100%">
+            <div class="centeredText"><b><i>31 DECEMBER 2017</i></b></div>
+        </div>
+        <div class="overlay">
+            <img src="/Photography/sydney/sydney-city.jpg" style="width:100%">
+            <div class="centeredText"><b><i>27 DECEMBER 2018</i></b></div>
+        </div>
+        <div class="overlay">
+            <img src="/Photography/sydney/sydney-city-2.jpg" style="width:100%">
+            <div class="centeredText"><b><i>27 DECEMBER 2018</i></b></div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="overlay">
+            <img src="/Photography/sydney/street-3.jpg" style="width:100%">
+            <div class="centeredText"><b><i>26 DECEMBER 2018</i></b></div>
+        </div>
+        <div class="overlay">
+            <img src="/Photography/sydney/street-1.jpg" style="width:100%">
+            <div class="centeredText"><b><i>15 JANUARY 2020</i></b></div>
+        </div>
+        <div class="overlay">
+            <img src="/Photography/sydney/street-2.jpg" style="width:100%">
+            <div class="centeredText"><b><i>15 JANUARY 2020</i></b></div>
+        </div>
+    </div>  
+    <div class="column">
+        <div class="overlay">
+            <img src="/Photography/sydney/street-greyscale.JPG" style="width:100%">
+            <div class="centeredText"><b><i>5 JULY 2016</i></b></div>
+        </div>
+        <div class="overlay">
+            <img src="/Photography/sydney/window.JPG" style="width:100%">
+            <div class="centeredText"><b><i>2 DECEMBER 2017</i></b></div>
+        </div>
+    </div>
+</div>
+
+<!-- External scripts -->
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+<script src="/Styles/js/image-gallery-resize.js"></script>
+
+<style>
+    * { box-sizing: border-box; }
+    /* Grid image gallery layout */
+    .column { -ms-flex: 30%; /* IE 10 */ flex: 30%; padding: 0px 10px; }
+    .row { display: -ms-flexbox; /* IE 10 */ display: flex; -ms-flex-wrap: wrap; /* IE 10 */ flex-wrap: wrap; padding: 0 0px; }
+    .column img { margin-top: -12px; vertical-align: middle; }
+    /* Text and overlay fade on image */
+    .overlay { transition: .5s ease; position: relative; text-align: center; color: white; margin-bottom: 0}
+    .overlay:hover { opacity: 0.8 }
+    .overlay .centeredText { display: none; } 
+    .overlay:hover .centeredText { display: block; } 
+    .centeredText { transition: .5s ease; position: absolute; top: 50%; left: 50%; padding: 10%; transform: translate(-50%, -50%); opacity: 0; font-size: 16; color: white }
+    .centeredText:hover { opacity: 1; background-color: rgba(0,0,0,0.6); border-radius: 50px; }
+</style>
+
+<script>
+    // Automatically runs on page load
+    if ($(window).width() < 760) {
+        for (i = 0; i < elements.length; i++) elements[i].style.flex = "100%";
+      }
+     else {
+        for (i = 0; i < elements.length; i++) elements[i].style.flex = "30%";
+     }
+    
+    function fadeIn() {
+        $(".overlay").on("mouseenter", function() {
+            $(".centeredText").css('opacity', '1');
+        });
+    }
+
+    function fadeOut() {
+        $(this).mouseleave(function() {
+            $(".centeredText").css('opacity', '0');
+        });
+    }
+</script>

@@ -1,0 +1,20 @@
+baseurl = "/"
+languageCode = "en-us"
+title = "Vondreii"
+theme = "ghostwriter"
+
+[Params]
+    mainSections = ["post"]
+    intro = true
+    headline = "Blog"
+    description = "List of my posts."
+    github = "https://github.com/vondreii"
+    LinkedIn = "http://www.linkedin.com/in/sharlene-von-drehnen"
+    email = "Sharlene.VonDrehnen@outlook.com"
+    opengraph = true
+    shareTwitter = false
+    dateFormat = "Mon, Jan 2, 2006"
+
+[Permalinks]
+    post = "/:filename/"
+    page = "/:filename/"

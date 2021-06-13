@@ -1,0 +1,14 @@
+<!--
+    The main BLOG post page, with list of posts.
+-->
+<style>
+    #blog-link a {color: #303030}
+    #wrapper { background-image:url('/Backgrounds/mountain.png'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed} 
+</style>
+
+{{ if .Site.Params.intro }}
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name">{{ .Site.Params.headline }}</h1>
+        
+    </header>
+{{ end }}
