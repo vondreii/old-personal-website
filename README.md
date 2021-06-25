@@ -1,8 +1,6 @@
 # old-personal-website
 These are old versions of my personal website, https://Vondreii.com, while I was experimenting with different web technologies.
 
-<hr>
-
 ## Version 1
 
 The first time I tried creating this website, I used Hugo, which uses pre-built themes from https://themes.gohugo.io/.
@@ -15,8 +13,6 @@ The first time I tried creating this website, I used Hugo, which uses pre-built 
 
 ![alt text](images/v1.PNG)
 
-<hr>
-
 ## Version 2
 
 I converted the hugo site into a static HTML/CSS site.
@@ -26,8 +22,6 @@ I converted the hugo site into a static HTML/CSS site.
 * In the `version 2` folder, open `index.html`. It should open in a browser.
 
 ![alt text](images/v2.PNG)
-
-<hr>
 
 ## Version 3
 
@@ -45,8 +39,6 @@ Changed the site to use Angular.
 * Use `ng build --prod` for a production build.
 
 ![alt text](images/v3.PNG)
-
-<hr>
 
 ## Version 4
 
