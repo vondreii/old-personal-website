@@ -1,0 +1,19 @@
+<!-- Sidebar menu -->
+<div id="mySidebar" class="sidebar">
+  <a (click)="closeNavOnClick()" routerLink="portfolio">Portfolio</a>
+  <a (click)="closeNavOnClick()" routerLink="blog">Blog</a>
+  <a (click)="closeNavOnClick()" routerLink="about-me">About</a>
+  <a (click)="closeNavOnClick()" routerLink="contact">Contact</a>
+</div>
+<!-- Main right part of page next to sidebar -->
+<div id="main">
+  <!-- Small navbar for sidebar expand and some social media -->
+  <nav class="navbar sticky-top">
+    <!-- <button class="openbtn" id="openbtn">☰</button> -->
+    <button class="openbtn" id="openbtn" (click)="openCloseNav()">☰</button>
+  </nav>
+  <!-- Render the content in this section -->
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+/* ****************************** FOOTER ****************************** */
+/* Style the footer */    
+footer {background-color:#272727;position:relative;bottom:0;height:250px;padding:50px;margin-top:0px;text-align:center}
+/* Footer social links */ 
+.social-footer {margin-top:20px;}
+.social-footer li {text-decoration:none;background-color:var(--primary-color)}
+.social-footer a {padding:10px 20px;color:white }
+.social-footer a:hover {background-color:lightgrey;border-radius:25px;color:#272727 }
+/* Copyright */
+.copy {margin-top:30px;font-size:16px;color:whitesmoke }
+.copy p {text-align:center}

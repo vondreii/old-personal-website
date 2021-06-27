@@ -1,0 +1,50 @@
+/* Navbar */
+nav {
+  background-image: url('../../../assets/articles/header-original.jpg');
+  background-size: cover;background-position: center;height: 20vh;background-attachment: fixed;
+}
+.hamburger {
+  background-color: grey
+}
+/* Navbar links */
+nav a {
+  display: inline-block;margin-left:10px;
+}
+nav a:link,
+nav a:visited {
+  padding: 8px 8px;color: #fff;transition: border-bottom 0.2s;text-decoration: none;text-transform: uppercase;font-size: 90%;
+  border-bottom: 2px solid transparent;-webkit-transition: border-bottom 0.2s;
+}
+nav a:hover,
+nav a:active {
+  border-bottom: 2px solid #40bedd;
+}
+
+/* Bigger screens */
+@media screen and (min-width:767px) {
+} 
+/* Only medium devices, eg ipads but not desktops #1 */
+@media screen and (min-width:1101px) and (max-width:1400px) {
+} 
+/* Only medium devices, eg ipads but not desktops #2 */
+@media screen and (min-width:901px) and (max-width:1100px) {
+} 
+/* Only medium devices, eg ipads but not desktops #3 */
+@media screen and (min-width:767px) and (max-width:900px) {
+  nav {padding-top:30px;height: 20vh;}
+  #navbarCollapse {background-color:transparent}
+  .separator-vertical {display:block}
+  .separator-horizontal {display:none}
+} 
+/* Smallest screens, like phones */
+@media screen and (max-width:766px) {
+  .separator-vertical {display:none}
+  .separator-horizontal {display:block}
+  .blog-link {display:none}
+  nav {height: auto;
+    position:fixed;width:100%;z-index:99;padding-bottom:10px}
+  nav a {padding:8px;margin-bottom:2px;border-bottom: none;}
+  nav a:link, nav a:visited {border-bottom: none;}
+  nav a:hover, nav a:active {border-bottom: none; color:lightgrey}
+}
+

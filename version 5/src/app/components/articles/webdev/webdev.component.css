@@ -1,0 +1,18 @@
+.searchbar {
+    background-image: url('../../../../assets/articles/header-original.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 0px;
+    height: 15vh;
+}
+
+@media screen and (max-width:900px) {
+    .searchbar {padding-top: 100px;height: 30vh;}
+    .show-header {display:none;}
+    .show-navbar {display:block;}
+}
+@media screen and (min-width:901px) {
+    .show-header {display:block;}
+    .show-navbar {display:none;}
+}

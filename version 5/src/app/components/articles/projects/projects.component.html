@@ -1,0 +1,28 @@
+<!-- If the screen is smaller, show the collapsable navbar -->
+<div class="show-navbar">
+  <app-navbar></app-navbar>
+</div>
+<!-- If the screen is bigger, show the header -->
+<div class="show-header">
+  <app-header></app-header>
+</div>
+<section class="bg-color">
+  <div class="container">
+    <br><br>
+    <div class="card-columns">
+      <!-- Loop of projects -->
+      <div class="project-card" *ngFor="let i of postArray">
+        <img class="card-img-top" src={{images[i]}} alt="img">
+        <div class="card-body">
+          <h5 class="card-title">{{titles[i]}}</h5>
+          <p><small class="text-muted">{{descriptions[i]}}</small></p>
+          <div class="read-more-project-button-container">
+            <a routerLink="{{links[i]}}" class="button read-more-button second-button">Read More >></a>
+          </div>
+        </div>
+      </div>
+      <br><br>
+    </div>
+  </div>
+  <br><br>
+</section>

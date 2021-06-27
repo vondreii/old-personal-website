@@ -1,0 +1,26 @@
+<!-- If Blog -->
+<div class="container" *ngIf="blog; else something">
+  <br>
+  <!-- Page Numbers -->
+  <div class="center">
+    <a (click)="changePageBlog(1)" routerLink="/blog" class="page-no">1</a>
+    <a (click)="changePageBlog(2)" routerLink="/blog" class="page-no">2</a>
+  </div>
+  <!-- List of blog items -->
+  <app-blog-list [contentList]='itemsToDisplay' [currentPage]='currentPage'></app-blog-list>
+  <!-- Page Numbers -->
+  <div class="center">
+    <a (click)="changePageBlog(1)" routerLink="/blog" class="page-no">1</a>
+    <a (click)="changePageBlog(2)" routerLink="/blog" class="page-no">2</a>
+  </div>
+</div>
+<!-- If portfolio -->
+<ng-template #something>
+  <h2 class="mt-3 center">Portfolio</h2>
+  <br>
+  <!-- List of portfolio items -->
+  <app-portfolio-list [contentList]='itemsToDisplay' [currentPage]='currentPage'></app-portfolio-list>
+</ng-template>
+<!-- Extra spaces -->
+<div class="pb-5"></div>
+<div class="pb-5"></div>

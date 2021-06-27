@@ -1,0 +1,24 @@
+[
+    { 
+        "title": "Hosting An Angular Application Using Github And Netlify", 
+        "date": "30 Aug 2020", 
+        "link": "/blog/hostingAngularApplicationUsingGithubAndNetlify", 
+        "tags": "Angular • Github • Netlify", 
+        "description": "Hugo is a framework where you can create your own website, completely from scratch without much effort or without knowing too much (or any) of the internal programming. There are also many web hosting platforms that can easily host a Hugo project for free - meaning, the only money you will spend will be for the custom domain name..."
+    },
+    { 
+        "title": "Setting Up A Github Repository and Creating A Local Copy", 
+        "date": "22 Aug 2020", 
+        "link": "/blog/settingUpAGithubRepositoryAndCreatingALocalCopy", 
+        "tags": "Version Control • Github", 
+        "description": "GitHub is a free version control platform where you can store your code online in repositories. When we create a Github repository, we are creating a place online where we can store our code files for a project remotely. This is a simple tutorial that will help you quickly set up an online remote repository on Github, which will be linked to a local folder on your computer..."
+    },
+    { 
+        "title": "Upload An Image To Instagram Using A Desktop Computer", 
+        "date": "11 Aug 2020", 
+        "link": "/blog/uploadAnImageToInstagramUsingADesktopComputer", 
+        "tags": "Design • Social Media", 
+        "description": "Sometimes you need to upload photos to Instagram on a computer, especially if you are using a computer to edit photos or create vector art. It can be really annoying to keep transferring them onto your phone and uploading it from there (and if you can't airdrop it using an IPhone, the quality of these photos can be reduced)..."
+    }
+]
+

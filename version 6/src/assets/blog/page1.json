@@ -1,0 +1,45 @@
+[
+    { 
+        "title": "Adding a Contact Form Using Formspree", 
+        "date": "1 Apr 2021", 
+        "link": "/blog/addingAContactFormUsingFormspree", 
+        "tags": "HTML • CSS • Forms", 
+        "description": "If you want a contact form on your website, you will need to figure out a system where inputs from the form are automatically sent to your email address. Formspree is a fast way to integrate forms into your website. It's extremely easy to use and handles all the logic for you. All you have to do is link the target email address you want the form's inputs to be sent to, and Formspree will do the rest..."
+    },
+    { 
+        "title": "Building A Second Brain With Notion: Storing Everything You Know In One Place", 
+        "date": "12 Feb 2021", 
+        "link": "/blog/buildingASecondBrainWithNotion", 
+        "tags": "Organisation", 
+        "description": "A Second Brain is simply just a single place where you store the things you know and learn. Whatever you store depends entirely on you and is based on what things add value to your life. Before, I was mostly relying on my brain to remember everything I knew or any new information I had learnt. If I did need to write things down, I would store information in many different places..."
+    },
+    { 
+        "title": "Hosting A Hugo Application Using Github and Netlify", 
+        "date": "4 Jan 2021", 
+        "link": "/blog/hostingAHugoAppUsingGithubAndNetlify", 
+        "tags": "Hugo • Netlify", 
+        "description": "Netlify is a free hosting platform where you can host your website live for free. One way it can do this is by linking to an existing Github repository and hosting your code stored there. If you have a Hugo App stored on a repository, you can use Netlify to host it. All you have to do is buy your own custom domain name and link it to Netlify..."
+    },
+    { 
+        "title": "Creating Your Own Blog Using Hugo", 
+        "date": "27 Nov 2020", 
+        "link": "/blog/createYourOwnBlogUsingHugo", 
+        "tags": "Hugo", 
+        "description": "Hugo is a framework where you can create your own website, completely from scratch without much effort or without knowing too much (or any) of the internal programming. There are also many web hosting platforms that can easily host a Hugo project for free - meaning, the only money you will spend will be for the custom domain name..."
+    },
+    { 
+        "title": "Creating a list of posts using Markdown on your Angular Website", 
+        "date": "11 Oct 2020", 
+        "link": "/blog/creatingAListOfPostsUsingMarkdownOnYourAngularWebsite", 
+        "tags": "Angular • Markdown", 
+        "description": "Let's say you want to write your own personal posts (for something like a blog, for example), and compile them as a list of posts on your homepage. If you want to do this yourself without using existing platforms, a good way is to use Markdown files! The basic idea is that each post or page with content will have their own file..."
+    },
+    { 
+        "title": "Linking A Namecheap Domain To Firebase",  
+        "date": "4 Oct 2020", 
+        "link": "/blog/linkingANamecheapDomainToFirebase", 
+        "tags": "Hosting • Firebase • Namecheap", 
+        "description": "Assuming you already have a website hosted on Firebase, you might not be satisfied with the default free domain name (which ends in something like .firebaseapp.com or .web.app). If you've already bought a Namecheap domain name, this is how you can link it to your Firebase hosted website..."
+    }
+]
+
